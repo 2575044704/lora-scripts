@@ -9,7 +9,7 @@ def install_and_run_jupyterlab(port=7860):
         print("JupyterLab has been successfully installed.")
 
         # 运行JupyterLab，指定端口
-        subprocess.run([sys.executable, "-m", "jupyter", "lab", "--port", str(port)], check=True)
+        subprocess.run([sys.executable, "-m", "jupyter", "notebook", "--port", str(port)], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Error: {e}")
         sys.exit(1)
