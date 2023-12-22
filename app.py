@@ -1,6 +1,7 @@
 import os
 import subprocess
 import sys
+ngrok_use = True
 def ngrok_start(port: int, address_name: str, should_run: bool):
     if not should_run:
         print('Skipping ngrok start')
